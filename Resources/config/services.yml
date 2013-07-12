@@ -1,0 +1,6 @@
+services:
+    drupal_integration:
+        class:      Jaza\DrupalIntegrationBundle\DependencyInjection\DrupalIntegration
+        arguments: [@request, @router, "%drupal_root%", "%drupal_base_url%", "%drupal_is_embedded%", "%drupal_menu_active_item%", "%drupal_wysiwyg_input_format_id%", "%drupal_css_includes%", "%drupal_get_author_username_methodname%", "%drupal_get_author_uid_methodname%", "%drupal_admin_roles%", "%drupal_homelink_route%", "%drupal_homelink_text%"]
+        public:     true
+        scope:      request
